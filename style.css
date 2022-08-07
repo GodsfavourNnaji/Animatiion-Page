@@ -1,0 +1,223 @@
+/*General*/
+.container{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #EDE3FF;
+}
+a{
+    color: #312121;
+    text-decoration: none;
+}
+
+ol{
+    list-style: none;
+}
+ol{
+    list-style: none;
+}
+.container{
+    margin:0 2em;
+}
+
+/*Main Navigation*/
+.header{
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+    padding: 1em 4em;
+    background-color: rgb(213, 210, 217);
+    color: rgb(14, 3, 51);
+}
+
+.animation_options{
+    display: flex;
+}
+.animation_options a{
+    padding: 0.5em 1em;
+}
+.animation_options a:hover{
+    border: solid #312121 1px;
+}
+
+/*Main Body*/
+.body{
+    display: flex;
+    margin: 0em 3em 0em 3em;
+    padding: 0em 0em 0em 0em;
+    /*justify-content: space-between;*/
+}
+
+/*HEADER MENU*/
+
+/*Main Menu Experiment (Drop down)*/
+.dropdown{
+    min-width: 10em;
+    position: relative;
+    /*margin: 2em;*/
+}
+.dropdown * {
+    box-sizing: border-box;
+}
+.select{
+    background: rgb(213, 210, 217);
+    color: rgb(47, 45, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px #2a2f3b solid;*/
+    padding: 0.5em;
+    cursor: pointer;
+}
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+.select:hover{
+    opacity: 50%;
+}
+.selected img{
+    width: 50%;
+    margin-left: 20%;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid rgb(39, 19, 101);
+    transition: 0.3s;
+    margin-right: 50px;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: rgb(237, 227, 255);
+    border: 1px rgb(39, 19, 101) solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.2em;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    padding: 0.3em 0.5em;
+    margin: 0.3em 0;
+    cursor: pointer;
+}
+.menu li:hover{
+    background-color: rgb(213, 210, 217);
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+/*Animation Options*/
+.animation_options{
+    margin-left: 0em;
+}
+.animation_options a{
+    padding: 0em 1em;
+    
+}
+.basic_animation:active{
+    border: none;
+    color: white;
+    background-color: rgb(39, 19, 101);
+}
+.bounce_animation:active{
+    border: none;
+    color: white;
+    background-color: rgb(39, 19, 101);
+}
+.fade_animation:active{
+    border: none;
+    color: white;
+    background-color: rgb(39, 19, 101);
+}
+.blink_animation:active{
+    border: none;
+    color: white;
+    background-color: rgb(39, 19, 101);
+}
+/*Profile Icon*/
+.profile_icon{
+    position: absolute;
+    margin-left: 80%;
+}
+
+/*ANIMATION BODY PROPER*/
+
+/*animation options list*/
+.animation_options_list{
+    flex-basis: 10%;
+    padding: 1em 1em 0em 1em;
+    background-color: rgb(246, 245, 247);
+    color: rgb(47, 45, 51);
+}
+.animation_options_list ol li{
+    padding-bottom: 1em;
+}
+/*animation Itself*/
+.animation_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 80%;
+    padding: 1em;
+    background-color: rgb(237, 227, 255);
+    color: rgb(39, 19, 101);
+}
+.anmation_body_images{
+    flex-basis: 10%;
+}
+.animation_body_images a img{
+    float: right;
+    margin: 8px;
+}
+.animation_body_images a:hover{
+    opacity: 50%;
+}
+.animation_body  i{
+    padding: 1em;
+}
+.animation{
+    font-size: 3em;
+    padding-top: 3em;
+    flex-basis: auto;
+}
+.animation h1{
+    width: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.anima_button{
+    background: rgb(39, 19, 101);
+    color: white;
+    padding: 10px;
+    border: none;
+    background-color: rgb(39, 19, 101);
+    width: 20%;
+    margin: 5% 40%;
+}
+/*animation Codes*/
+.animation_code{
+    flex-basis: 10%;
+    padding: 1em 1em 0em 1em;
+    background-color: rgb(246, 245, 247);
+    color: rgb(47, 45, 51);
+}
+.animation_code h2{
+    padding: 1em 0;
+}
+
+ 
