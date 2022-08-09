@@ -1,9 +1,7 @@
 /*General*/
 .container{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     color: #EDE3FF;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     color: #312121;
@@ -16,11 +14,23 @@ ol{
 ol{
     list-style: none;
 }
-.container{
-    margin:0 2em;
-}
+    
+
+/*HEADER MENU*/
 
 /*Main Navigation*/
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    z-index: 2;
+    display: none;
+}
+.mobile-menu{
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
 .header{
     display: flex;
     align-items: center;
@@ -40,21 +50,10 @@ ol{
     border: solid #312121 1px;
 }
 
-/*Main Body*/
-.body{
-    display: flex;
-    margin: 0em 3em 0em 3em;
-    padding: 0em 0em 0em 0em;
-    /*justify-content: space-between;*/
-}
-
-/*HEADER MENU*/
-
 /*Main Menu Experiment (Drop down)*/
 .dropdown{
     min-width: 10em;
     position: relative;
-    /*margin: 2em;*/
 }
 .dropdown * {
     box-sizing: border-box;
@@ -65,7 +64,6 @@ ol{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border: 2px #2a2f3b solid;*/
     padding: 0.5em;
     cursor: pointer;
 }
@@ -157,10 +155,14 @@ ol{
 
 /*ANIMATION BODY PROPER*/
 
+/*Main Body*/
+.body{
+    display: flex;
+}
 /*animation options list*/
 .animation_options_list{
     flex-basis: 10%;
-    padding: 1em 1em 0em 1em;
+    padding: 1em 1em 0em 0em;
     background-color: rgb(246, 245, 247);
     color: rgb(47, 45, 51);
 }
@@ -196,9 +198,7 @@ ol{
     flex-basis: auto;
 }
 .animation h1{
-    width: 100%;
-    margin-left: 30%;
-    margin-right: 30%;
+    padding: 0% 30%;
 }
 .anima_button{
     background: rgb(39, 19, 101);
@@ -206,8 +206,8 @@ ol{
     padding: 10px;
     border: none;
     background-color: rgb(39, 19, 101);
-    width: 20%;
-    margin: 5% 40%;
+    width: max-content;
+    margin: -10% 40% 5% 40%;
 }
 /*animation Codes*/
 .animation_code{
@@ -216,8 +216,45 @@ ol{
     background-color: rgb(246, 245, 247);
     color: rgb(47, 45, 51);
 }
-.animation_code h2{
-    padding: 1em 0;
-}
 
- 
+
+@media(max-width: 800px) {
+    .container{
+        margin: 0px;
+    }
+    .body {
+        width: 50%;
+    }
+}
+@media(max-width: 700px) {
+    .dropdown{
+        display: none;
+    }
+    .menu-btn{
+        display:block;
+    }
+    .menu-btn:hover{
+        opacity: 50%;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        background: white;
+        border: #26489a solid 1px;
+        top: 80px;
+        left: 20px;
+        opacity: 85%;
+        transform: translateX(-500px);
+    }
+    .mobile-menu.show{
+        transform: translateX(0px);
+    }
+    .mobile-menu ol li{
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .mobile-menu ol li:hover{
+        cursor: pointer;
+        opacity: 60%;
+    }
+}
