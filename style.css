@@ -27,7 +27,7 @@ ol{
     z-index: 2;
     display: none;
 }
-.mobile-menu{
+#mobile-menu{
     font-family: 'Poppins', sans-serif;
     display: none;
 }
@@ -236,7 +236,7 @@ ol{
     .menu-btn:hover{
         opacity: 50%;
     }
-    .mobile-menu {
+    #mobile-menu {
         display: block;
         position: absolute;
         background: white;
@@ -246,15 +246,53 @@ ol{
         opacity: 85%;
         transform: translateX(-500px);
     }
-    .mobile-menu.show{
-        transform: translateX(0px);
+    #mobile-menu.show{
+        transform: translateX(00px);
     }
-    .mobile-menu ol li{
+    #mobile-menu ol li{
         padding-right: 20px;
         padding-bottom: 10px;
     }
-    .mobile-menu ol li:hover{
+    #mobile-menu ol li:hover{
         cursor: pointer;
         opacity: 60%;
+    }
+
+    .body{
+        display: block;
+    }
+    .animation_options_list{
+        display: none;
+    }
+    .animation_body{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(237, 227, 255);
+        color: rgb(39, 19, 101);
+    }
+    .animation_body_images a img{
+        float: right;
+        margin: 8px;
+    }
+    .animation_body_images a:hover{
+        opacity: 50%;
+    }
+    .animation_body  i{
+        /*padding: 1em;*/
+    }
+    .animation{
+        font-size: 3em;
+        padding-top: 3em;
+    }
+    .animation h1{
+        width: fit-content;
+    }
+    .anima_button{
+
+    }
+    .animation_code{
+        padding: 1em 1em 0em 1em;
+        background-color: rgb(246, 245, 247);
+        color: rgb(47, 45, 51);
     }
 }

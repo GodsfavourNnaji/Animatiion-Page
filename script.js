@@ -27,5 +27,8 @@ dropdowns.forEach(dropdown => {
     });
 });
 
-document.querySelector('.menu-btn').addEventListener
-('click', () => document.querySelector('.mobile-menu').classList.toggle('show'));
+
+function myFunction() {
+    var element = document.getElementById("mobile-menu");
+    element.classList.toggle("show")
+}
